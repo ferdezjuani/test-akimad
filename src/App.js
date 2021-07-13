@@ -4,7 +4,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
 } from "react-router-dom";
 import FormAPI from "./containers/FormAPI";
 
@@ -12,11 +11,10 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/main">
+        <Route path="/">
           <FormAPI />
         </Route>
       </Switch>
-        <Redirect from="/" to="/main" />
     </Router>
   );
 }
